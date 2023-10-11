@@ -29,5 +29,8 @@ const Kitfo = {
   Orgin: "Ethiopia",
   Eaten: "Hot, Cold",
 };
-
-console.log();
+const animalsarr = [Borscht, CroqueMadame, Kimchi, Souvlaki, Schweinshaxe, Kitfo];
+animalsarr.forEach((number) => {
+  console.log(Kitfo);
+  console.log(animalsarr);
+});
