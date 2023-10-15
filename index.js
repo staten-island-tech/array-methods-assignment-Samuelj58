@@ -1,36 +1,47 @@
-
-const Borscht = {
+const B = {
   Name: "Borscht",
   Orgin: "Russia/Ukraine",
-  Eaten: "Hot, Cold",
+  Hot: false,
+  nums: [1,2,3,4]
 };
-const CroqueMadame = {
+const C = {
   Name: "Croque Madame",
   Orgin: "France",
-  Eaten: "Hot",
+  Hot: true,
+  nums: [2,4]
 };
-const Kimchi = {
+const K = {
   Name: "Kimchi",
   Orgin: "Korea",
-  Eaten: "Hot, Cold",
+  Hot: false,
+  nums: [1,2]
 };
-const Souvlaki = {
+const S = {
   Name: "Souvlaki",
   Orgin: "Greece",
-  Eaten: "Hot",
+  Hot: true,
+  nums: [2,3]
 };
-const Schweinshaxe = {
+const Sch = {
   Name: "Schweinshaxe",
   Orgin: "Germany",
-  Eaten: "Hot",
+  Hot: true,
+  nums: [3,4]
 };
-const Kitfo = {
+const Kit = {
   Name: "Kitfo",
   Orgin: "Ethiopia",
-  Eaten: "Hot, Cold",
+  Hot: false,
+  nums: [1,4]
 };
-const animalsarr = [Borscht, CroqueMadame, Kimchi, Souvlaki, Schweinshaxe, Kitfo];
-animalsarr.forEach((number) => {
-  console.log(Kitfo);
-  console.log(animalsarr);
+
+const foodarr = [];
+foodarr.push(B, C, K, S, Sch, Kit);
+
+foodarr.forEach(function (food) {
+  console.log(food.Name);
 });
+console.log(foodarr)
+const food = foodarr.filter((item) => item.Hot);
+const cfood = foodarr.filter((items) => !items.Hot);
+console.log(cfood, food,);
