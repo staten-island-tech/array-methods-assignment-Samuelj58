@@ -41,7 +41,7 @@ foodarr.push(B, C, K, S, Sch, Kit);
 foodarr.forEach(function (food) {
   console.log(food.Name);
 });
-console.log(foodarr)
+
 const food = foodarr.filter((item) => item.Hot);
 const cfood = foodarr.filter((items) => !items.Hot);
 console.log(cfood, food,);
